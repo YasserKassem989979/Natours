@@ -1,0 +1,22 @@
+{
+  "name": "yalla",
+  "version": "1.0.0",
+  "description": "Beautiful website to book a trip.(advanced CSS, Sass and responsive design)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasserKassem989979/Yalla.git"
+  },
+  "author": "Yasser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasserKassem989979/Yalla/issues"
+  },
+  "homepage": "https://github.com/YasserKassem989979/Yalla#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
