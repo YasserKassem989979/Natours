@@ -1,0 +1,5 @@
+
+.icon-heart-empty:before { content: '\e800'; } /* '' */
+.icon-map:before { content: '\e801'; } /* '' */
+.icon-compass:before { content: '\e802'; } /* '' */
+.icon-globe:before { content: '\e803'; } /* '' */
