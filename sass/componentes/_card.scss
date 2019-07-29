@@ -25,11 +25,21 @@
 
         &--back{
         
-        transform: rotateY(180deg);
+         transform: rotateY(180deg);
 
-        &-1{
+
+         &-1{
             background-image: linear-gradient(to right bottom,$secondary-color-light,$secondary-color-dark);
-        }
+         }
+
+         &-2{
+            background-image: linear-gradient(to right bottom,$primary-color-light,$primary-color-dark);
+         }
+
+         &-3{
+            background-image: linear-gradient(to right bottom,$third-color-light,$third-color-dark);
+         }
+         
         }
     }
     &:hover &__side--front{
@@ -49,7 +59,7 @@
     
     background-size: cover;
     height: 23rem;
-    background-blend-mode: soft-light;
+    background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
 
@@ -58,6 +68,15 @@
         ,url("../img/nat-5.jpg");
     }
     
+    &--2{
+        background-image: linear-gradient(to right bottom,$primary-color-light,$primary-color-dark)
+            ,url("../img/nat-6.jpg");
+        }
+
+    &--3{
+        background-image: linear-gradient(to right bottom,$third-color-light,$third-color-dark)
+            ,url("../img/nat-7.jpg");
+            }
   }
 
 
@@ -80,6 +99,16 @@
     &--1{
         background-image:  linear-gradient(to right bottom,rgba($secondary-color-light,0.7),rgba($secondary-color-dark,0.8))
     }
+
+    &--2{
+        background-image:  linear-gradient(to right bottom,rgba($primary-color-light,0.7),rgba($primary-color-dark,0.8))
+    }
+
+    &--3{
+        background-image:  linear-gradient(to right bottom,rgba($third-color-light,0.7),rgba($third-color-dark,0.8))
+    }
+
+    
   }
 
   &__details{
@@ -101,5 +130,31 @@
         }
     }
   }
+
+    // back side styling
+
+    &__box{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center
+    }
+
+    &__price{
+        margin-bottom: 7rem;
+
+        &-only{
+         text-transform: uppercase;
+         font-size: 1.5rem;
+        }
+
+        &-price{
+            font-size: 6rem;
+            font-weight: 100;
+
+        }
+    }
+
 }
 

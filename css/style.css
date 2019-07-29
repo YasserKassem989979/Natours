@@ -266,6 +266,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #08C8F6, #4D5DFB); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #F9D976, #F39F86); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -273,11 +277,15 @@ body {
   .card__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: soft-light;
+    background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #08C8F6, #4D5DFB), url("../img/nat-5.jpg"); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #F9D976, #F39F86), url("../img/nat-7.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -293,6 +301,10 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(8, 200, 246, 0.7), rgba(77, 93, 251, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(249, 217, 118, 0.7), rgba(243, 159, 134, 0.8)); }
   .card__details {
     color: #777;
     padding: 2rem; }
@@ -306,6 +318,20 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #ececec; }
+  .card__box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card__price {
+    margin-bottom: 7rem; }
+    .card__price-only {
+      text-transform: uppercase;
+      font-size: 1.5rem; }
+    .card__price-price {
+      font-size: 6rem;
+      font-weight: 100; }
 
 .header {
   height: 95vh;
