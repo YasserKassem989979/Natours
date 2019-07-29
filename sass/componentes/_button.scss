@@ -4,7 +4,7 @@
     &:visited{
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.4rem 2.4rem;
+        padding: 1.5rem 3rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all 0.4s;
@@ -34,6 +34,15 @@
 
         &::after{
             background-color: $color-white;
+        }
+    }
+
+    &-green{
+        background-color:$primary-color;
+        color: $color-white;
+
+        &::after{
+            background-color: $primary-color;
         }
     }
     

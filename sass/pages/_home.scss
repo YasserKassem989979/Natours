@@ -23,7 +23,19 @@
 
 .section-tours{
     background-color: $color-light-gray-1;
-    padding: 20rem 0 50rem 0;
+    padding: 20rem 0 10rem 0;
     margin-top: -10rem;
+
+    &-btn{
+      text-align: center;
+      padding: 4rem;
+    }
+}
+
+.section-stories{
+    padding: 15rem 0;
+    // margin-top: -20rem;
+    text-align: center;
+    position: relative;
 }
 
