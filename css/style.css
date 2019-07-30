@@ -66,16 +66,6 @@ html {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.2rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
 body {
   font-family: "Lato",sans-serif;
   font-weight: 400;
@@ -126,12 +116,15 @@ body {
     transform: skewY(3deg) skewX(2deg);
     text-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.2); }
 
-.paragraph {
-  font-size: 1.6rem; }
-
 .heading-tertiary {
-  text-transform: uppercase;
-  color: #777; }
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.2rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -399,6 +392,8 @@ body {
   .story:hover .story__img {
     transform: scale(1) translateX(-3rem);
     filter: blur(3px) brightness(80%); }
+  .story__btn {
+    text-align: center; }
 
 .header {
   height: 95vh;
@@ -466,5 +461,4 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  text-align: center;
   position: relative; }

@@ -66,12 +66,17 @@ body{
 
 }
 
-.paragraph{
-    font-size: $default-font-size;
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase
 }
 
-.heading-tertiary{
-    text-transform: uppercase;
-    color: $color-gray
+.paragraph{
+    font-size: 1.2rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem
+    }
 }
 
