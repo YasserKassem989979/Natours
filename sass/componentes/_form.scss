@@ -1,0 +1,47 @@
+.form{
+
+    &__input{
+        font-size: 1.5rem;
+        background-color: $color-white;
+        font-family: inherit;
+        border: none;
+        padding: 1.5rem 2rem;
+        width: 80%;
+        border-radius: 2px;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s;
+
+
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $primary-color;
+        };
+
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
+    }
+
+    &__group{
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem)
+    }
+
+    &__label{
+        display: block;
+        font-size: 1.3rem;
+        margin-left: 2rem;
+        transition: all 0.2s;
+
+    }
+}
