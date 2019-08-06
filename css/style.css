@@ -530,12 +530,74 @@ body {
     text-transform: uppercase; }
     .footer__item:not(:last-child) {
       margin-right: 2rem; }
+    .footer__item:hover {
+      transform: rotate(10deg) scale(1.2);
+      color: #55c57a;
+      box-shadow: 0 0.5rem 2rem #000; }
+  .footer__link {
+    display: inline-block;
+    transition: all 0.2s; }
+    .footer__link:visited, .footer__link:link {
+      text-decoration: none;
+      color: inherit; }
   .footer__copyrights {
     color: #ececec;
     width: 80%;
     float: right;
     border-top: 1px solid #f7f7f7;
     padding-top: 2rem; }
+
+.navigation {
+  position: relative; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center; }
+  .navigation__background {
+    background-image: radial-gradient(#7ed56f, #28b485);
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    z-index: 1000;
+    transform: scale(80); }
+  .navigation__nav {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1500; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__item {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all 0.4s; }
+    .navigation__item:hover {
+      background-position-x: 98%;
+      color: #55c57a;
+      transform: translateX(1rem); }
+  .navigation__link {
+    text-decoration: none;
+    color: inherit; }
 
 .section-about {
   background-color: #f7f7f7;
