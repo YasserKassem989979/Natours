@@ -508,6 +508,35 @@ body {
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
 
+.footer {
+  background-color: #272727;
+  padding: 12rem 0;
+  font-size: 1.5rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 6rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    color: #ececec;
+    list-style: none;
+    display: inline-block;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    width: 80%; }
+  .footer__item {
+    display: inline-block;
+    text-transform: uppercase; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__copyrights {
+    color: #ececec;
+    width: 80%;
+    float: right;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
